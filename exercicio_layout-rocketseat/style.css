@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    padding: 1.3rem;
+    background: lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;    
+    list-style: none;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    border-radius: 4px;
+    background: rgb(10, 10, 10);
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    margin: 7px;
+}
+
+section, aside {
+    border: 1px solid;
+    height: 100%;    
+    margin: 5px;
+}
+
+section {
+    flex-basis: 75%;
+}
+
+aside {
+    flex-basis: 25%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    text-align: center;    
+}
+
+picture > img {
+    width: 25%;
+    height: auto;
+}
+
+.gallery {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    margin: 1rem 0 1.3rem 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 0.4rem;
+    padding-right: 0.4rem;
+    margin: 20px 10px;    
+}
+
+button img {    
+    width: 2rem;
+    height: 3rem;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    color: black;
+    background: lightgray;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}

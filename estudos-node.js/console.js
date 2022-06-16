@@ -1,0 +1,1 @@
+global.console.log("Olá Mundo!")
