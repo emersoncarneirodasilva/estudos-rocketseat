@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Fill Mode</title>
+    <style>
+      .ball {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: blueviolet;
+        
+        animation-name: example;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes example {
+        0% {
+          left: 0;
+          background-color: cyan;
+        }
+
+        50% {
+          left: 300px;
+          background-color: yellow;
+        }
+
+        100% {
+          left: calc(100% - 150px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Keyframes com Porcentagem</title>
+    <style>
+      .ball {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: red;
+        
+        animation-name: example-two;
+        animation-duration: 10s;
+      }
+
+      @keyframes example-one {
+        from {
+          background-color: blueviolet;
+        }
+
+        to {
+          background-color: aquamarine;
+        }
+      }
+
+      @keyframes example-two {
+        10% {
+          background-color: rebeccapurple;
+        }
+
+        25% {
+          background-color: yellow;
+        }
+
+        50% {
+          background-color: blue;
+        }
+
+        75% {
+          background-color: greenyellow;
+        }
+
+        100% {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>
